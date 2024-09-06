@@ -4,7 +4,7 @@ import hamburger from "../assets/Vector.png"
 import close from "../assets/Close.svg"
 import { Link, useLocation } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ buttonRef }) {
     const [navbar, setNavbar] = useState(false);
     const location = useLocation();
 
@@ -12,9 +12,7 @@ function Navbar() {
         <nav className="lg:flex bg-[#283B49] lg:bg-white pr-4 w-full lg:pr-[120px] lg:pl-[85px] items-center lg:h-[112px] justify-between relative">
             <div className="flex pt-2 items-center justify-between w-full">
                <div className="lg:flex justify-center items-center">
-                    <Link to="/">
                         <header><img className="w-[127px] h-[85px] lg:w-[127px] lg:h-[85px]" src={logo} alt="logo" /></header>
-                    </Link>
                     <ul className="hidden lg:flex gap-8">
                         <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/">Home</Link></li>
                         <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/about-us' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/about-us">About Us</Link></li>
@@ -24,11 +22,11 @@ function Navbar() {
                     </ul>
                </div>
                 <div className="hidden lg:flex md:justify-center lg:items-center">
-                  <Link to="/prime-time-pal/registration/">
-                    <button className="bg-[#4ABE99] mt-2 mb-4 lg:mt-0 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]">
+                    <button className="bg-[#4ABE99] mt-2 mb-4 lg:mt-0 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]" onClick={() => buttonRef.current.scrollIntoView({
+                    behavior: 'smooth'
+                    })}>
                         Join the Tribe
                     </button>
-                  </Link>
                 </div>
                 <div className="lg:hidden">
                     <button
@@ -65,11 +63,11 @@ function Navbar() {
                         <li className="mb-8"><Link className={`font-montserrat block ${location.pathname === '/faq' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/faq">FAQs</Link></li>
                     </ul>
                     <div className="flex justify-center items-center">
-                    <Link to="/prime-time-pal/registration/">
-                    <button className="bg-[#4ABE99] mt-2 mb-4 lg:mt-0 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]">
+                    <button className="bg-[#4ABE99] mt-2 mb-4 lg:mt-0 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]" onClick={() => buttonRef.current.scrollIntoView({
+                    behavior: 'smooth'
+                    })}>
                         Join the Tribe
                     </button>
-                  </Link>
                     </div>    
                 </div>
             )}

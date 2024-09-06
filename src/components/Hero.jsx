@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ buttonRef }) {
     return (
         <section className="bg-[#283B49] px-6 font-montserrat lg:flex lg:justify-between lg:items-center lg:gap-8 lg:px-24 lg:py-24">
            <div className="">
@@ -7,7 +7,9 @@ function Hero() {
                     Our comprehensive training program is designed to help individuals not only pass the PSM 
                     I exam but also gain a deep understanding of Scrum principles and their application in the professional world.
                 </p>
-                <button className="bg-[#4ABE99] mt-2 mb-4 text-white rounded-[5px] w-[166px] h-[48px]">
+                <button className="bg-[#4ABE99] mt-2 mb-4 text-white rounded-[5px] w-[166px] h-[48px]" onClick={() => buttonRef.current.scrollIntoView({
+                    behavior: 'smooth'
+                    })}>
                     Get Started
                 </button>
            </div>

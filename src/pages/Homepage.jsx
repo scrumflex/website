@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Benefits from "../components/Benefits";
 import ContactUs from "../components/ContactUs";
 import Countdown from "../components/Countdown";
@@ -10,18 +11,19 @@ import Sponsor from "../components/Sponsor";
 import Success from "../components/Success";
 
 function Homepage() {
+    const myRef = useRef(null);
     return (
         <>
-            <Navbar />
+            <Navbar buttonRef = {myRef} />
             <main className="">
-                <Hero />
+                <Hero buttonRef = {myRef} />
                 <Sponsor />
                 <Details />
                 <Countdown />
                 <Benefits />
                 <Success />
                 <Insights />
-                <ContactUs />
+                <ContactUs formRef = {myRef} />
                 <Footer />
             </main>
         </>

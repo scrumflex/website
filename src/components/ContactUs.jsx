@@ -1,6 +1,6 @@
-function ContactUs() {
+function ContactUs({ formRef }) {
     return(
-        <section className='font-montserrat bg-[#26619B] lg:pt-12 p-6 lg:flex lg:items-center lg:px-28 lg:justify-between'>
+        <section ref={formRef} className='font-montserrat bg-[#26619B] lg:pt-12 p-6 lg:flex lg:items-center lg:px-28 lg:justify-between'>
             <div className='lg:w-[380px]'>
                 <h5 className="text-[22px] text-white mb-2 font-[700]">Join our mailing list</h5>
                 <p className="text-[14px] text-white mb-6 leading-[28.98px]">Get exclusive agile and project management tips to help you build the team and projects of your dreams.</p>
