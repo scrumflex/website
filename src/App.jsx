@@ -7,7 +7,7 @@ import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import Trainings from "./pages/Trainings";
 import Articles from "./pages/Articles";
-import Faq from "./pages/FAQ";
+import Faq from "./pages/Faq";
 
 function App() {
 
