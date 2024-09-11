@@ -15,7 +15,7 @@ function Trainings() {
             </section>
             <section className="m-12 lg:justify-center lg:items-center lg:gap-10 lg:flex">
                 <div className="bg-[#F7F7F7] p-6 mb-4 lg:mb-0 lg:px-10 lg:w-[451px] text-center rounded-[10px]">
-                    <h2 className="pb-4 font-montserrat font-semibold whitespace-nowrap">Professional Scrum Master (PSM) I</h2>
+                    <h2 className="pb-4 font-montserrat font-semibold">Professional Scrum Master (PSM) I</h2>
                     <Link to="">
                     <button className="bg-transparent border-[#4ABE99] border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat text-[#4ABE99] rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
                         Click Here
@@ -23,7 +23,7 @@ function Trainings() {
                     </Link>
                 </div>
                 <div className="bg-[#F7F7F7] text-center p-6 lg:px-10 lg:w-[451px] rounded-[10px]">
-                    <h2 className="pb-4 font-montserrat font-semibold whitespace-nowrap">Professional Scrum Master (PSM) I</h2>
+                    <h2 className="pb-4 font-montserrat font-semibold">Professional Scrum Master (PSM) I</h2>
                     <Link to="">
                     <button disabled className="bg-transparent border-[#4ABE99] border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat text-[#4ABE99] rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
                         Coming Soon
