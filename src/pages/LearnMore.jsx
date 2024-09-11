@@ -9,7 +9,7 @@ function LearnMore() {
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/assets/scholarship.jpeg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-center bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/scholarship.jpeg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-center bg-no-repeat h-[200px] lg:h-[278px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">ABOUT US</h1>
             </section>
             <div className="lg:px-24 mt-6 px-6 lg:mb-8">
