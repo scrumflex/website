@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import Trainings from "./pages/Trainings";
 import Articles from "./pages/Articles";
 import Faq from "./pages/Faq";
+import LearnMore from "./pages/LearnMore";
 
 function App() {
 
@@ -17,20 +18,24 @@ function App() {
       element: <Homepage />,
     },
     {
-      path:'/about-us/',
+      path:'website/about-us/',
       element: <AboutUs />
     },
     {
-      path:'/trainings/',
+      path:'website/trainings/',
       element: <Trainings />
     },
     {
-      path:'articles/',
+      path:'website/articles/',
       element: <Articles />
     },
     {
-      path:'/faq/',
+      path:'website/faq/',
       element: <Faq />
+    },
+    {
+      path:'website/learn-more/',
+      element: <LearnMore />
     },
   ]);
 
