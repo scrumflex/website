@@ -5,19 +5,21 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import CoreValues from "../components/coreValues";
 
 function AboutUs() {
     const myRef = useRef(null);
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/scholarship.jpeg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-center bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/image25.jpg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-top bg-no-repeat h-[200px] lg:h-[278px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">ABOUT US</h1>
             </section>
             <section className="font-montserrat pt-4 px-6 lg:px-24 lg:py-16">
                 <h2 className="font-[700] text-[26px] lg:text-[32px] leading-[56.61px]">Who we are</h2>
                 <p className="leading-[28.34px] text-[14px]">At ScrumFlex, we empower individuals and organizations through practical, interactive Scrum training. Founded by an experienced Agile Coach, we bring a wealth of knowledge and experience to our training programs.Our mission is to provide effective training for all levels, ensuring participants can pass the PSM I exam in one sitting and apply Agile principles to enhance collaboration, innovation and continuous improvement in their various projects and teams.</p>
             </section>
+            <CoreValues />
             <div className="lg:px-24 mt-6 px-6 lg:mb-8">
                 <section className="lg:flex lg:gap-12 lg:justify-center lg:items-center">
                     <img className="lg:float-right lg:w-[487px] lg:h-[353px] lg:m-2" src={amen} />

@@ -1,8 +1,8 @@
 function Hero({ buttonRef }) {
     return (
-        <section className="bg-[#283B49] px-6 font-montserrat lg:flex lg:justify-between lg:items-center lg:gap-8 lg:px-24 lg:py-24">
+        <section className="bg-[#283B49] px-6 font-montserrat lg:flex lg:items-center md:gap-12 lg:px-24 lg:py-24">
            <div className="">
-            <h2 className="text-[32px] lg:w-[547px] lg:text-[49px] lg:leading-[73.94px] text-white font-[700]">Become a Certified Scrum Master</h2>
+            <h2 className="text-[32px] lg:w-[547px] lg:text-[49px] lg:leading-[58.94px] text-white font-[700]">Become a Certified Scrum Master</h2>
                 <p className="text-[18px] lg:w-[547px] my-4 lg:text-[20px] leading-[31.84px] text-white font-[400]">
                     Our comprehensive training program is designed to help individuals not only pass the PSM 
                     I exam but also gain a deep understanding of Scrum principles and their application in the professional world.
@@ -19,7 +19,7 @@ function Hero({ buttonRef }) {
                 className="rounded-[10px] w-full h-[235px] lg:h-[295px] lg:w-[419.19px]"
                 width="250"
                 height="235"
-                src="https://www.youtube.com/embed/iJ_sl6J8PRg"
+                src="https://www.youtube.com/embed/wXaf7Hh41V8?si=wzVSt2fwXl80VMml"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="YouTube Video"

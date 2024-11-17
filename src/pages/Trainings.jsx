@@ -10,23 +10,23 @@ function Trainings() {
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/scholarship.jpeg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-center bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/image25.jpg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-top bg-no-repeat h-[200px] lg:h-[278px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">TRAININGS</h1>
             </section>
             <section className="m-12 lg:justify-center lg:items-center lg:gap-10 lg:flex">
-                <div className="bg-[#F7F7F7] p-6 mb-4 lg:mb-0 lg:px-10 lg:w-[451px] text-center rounded-[10px]">
+                <div className="bg-[#575454] text-white p-6 mb-4 lg:mb-0 lg:px-10 lg:w-[451px] text-center rounded-[10px]">
                     <h2 className="pb-4 font-montserrat font-semibold">Professional Scrum Master (PSM) I</h2>
                     <Link to="">
-                    <button className="bg-transparent border-[#4ABE99] border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat text-[#4ABE99] rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
+                    <button className="bg-transparent border-[#FFFFFF] border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat text-[#FFFFFF] rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
                         Click Here
                     </button>
                     </Link>
                 </div>
-                <div className="bg-[#F7F7F7] text-center p-6 lg:px-10 lg:w-[451px] rounded-[10px]">
-                    <h2 className="pb-4 font-montserrat font-semibold">Professional Scrum Master (PSM) I</h2>
+                <div className="bg-[#575454] text-white text-center p-6 lg:px-10 lg:w-[451px] rounded-[10px]">
+                    <h2 className="pb-4 font-montserrat font-semibold">Professional Scrum Product Owner (PSPO)  </h2>
                     <Link to="">
-                    <button disabled className="bg-transparent border-[#4ABE99] border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat text-[#4ABE99] rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
-                        Coming Soon
+                    <button disabled className="bg-transparent border-[#FFFFFF] text-white border-[1.5px] lg:mt-6 mt-2 mb-4 lg:mb-0 font-[700] font-montserrat rounded-[5px] w-[140px] lg:w-[166px] lg:h-[48px] h-[38px]" >
+                        Click Here
                     </button>
                     </Link>
                 </div>

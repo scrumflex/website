@@ -1,6 +1,6 @@
-import img1 from "../assets/business-man.jpg"
-import img2 from "../assets/portrait-young.jpg"
-import img3 from "../assets/full-shot-student.jpg"
+import img1 from "../assets/image39.jpg"
+import img2 from "../assets/image42.jpg"
+import img3 from "../assets/imgObj.jpeg"
 
 function Details() {
     return (

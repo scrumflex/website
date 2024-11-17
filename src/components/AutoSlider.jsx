@@ -43,6 +43,10 @@ import React, { useState, useEffect } from 'react';
 import star from '../assets/star.png'
 import lady1 from '../assets/lady1.png'
 import lady2 from '../assets/lady2.png'
+import lady3 from '../assets/image41.jpg'
+import lady4 from '../assets/image17.jpg'
+import lady5 from '../assets/image22.jpg'
+import lady6 from '../assets/image32.jpg'
 
 const AutoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,14 +57,41 @@ const AutoSlider = () => {
       image: lady1, 
       name: "Treasure Ihedibo", 
       title: "Project Manager", 
-      review: "Enrolling in ScrumFlex, led by Ms. Amen, exceeded expectations. Her passion and unwavering support made the learning journey delightful. The structured courses and her engaging teaching style demystified Scrum. ScrumFlex is a community, not just a platform.", 
+      review: "Enrolling in ScrumFlex, led by Ms. Amen, exceeded expectations. Her passion and unwavering support made the learning journey delightful. The structured courses and her engaging teaching style demystified Scrum. ScrumFlex is a community, not just a platform.",
+      id2: 2, 
+      content2: 'Slide 1 Content', 
+      image2: lady2, 
+      name2: "Jesutofunmi Adedokun", 
+      title2: "Scrum Master", 
+      review2: "The training was thorough and engaging. I passed the PSM I exam on my first attempt and have successfully implemented Scrum practices in my team. Thanks to Ms Amen, for helping me kickstart my career as a scrum master.", 
     },
-    { id: 2, 
+    {
+      id: 3, 
       content: 'Slide 2 Content', 
-      image: lady2, 
-      name: "Jesutofunmi Adedokun", 
+      image: lady3, 
+      name: "Olugbenga Busayo", 
+      title: "Project Intern", 
+      review: "My overall experience of the training stood out for its intentional approach, starting from a total newbie perspective and building towards a full understanding of Scrum. I found it especially valuable how the tutors broke down complex Scrum concepts into simple terms, making them easy to grasp domiciled words/concepts and their meanings/scenarios. ",
+      id2: 4, 
+      content2: 'Slide 2 Content', 
+      image2: lady4, 
+      name2: "Victor Akacha", 
+      title2: "Entrepreneur", 
+      review2: "The training was eventful from the ice breaker all the way through to the main sessions. The training focused on specifics, ensuring every trainee got involved in one-on-one interactions with the trainer. Everyone took turns answering questions, with explanations provided for each response.",  
+    },
+    {
+      id: 5, 
+      content: 'Slide 3 Content', 
+      image: lady5, 
+      name: "Iniobong etukudoh", 
       title: "Scrum Master", 
-      review: "The training was thorough and engaging. I passed the PSM I exam on my first attempt and have successfully implemented Scrum practices in my team. Thanks to Ms Amen, for helping me kickstart my career as a scrum master.", 
+      review: "Building on my prior project management knowledge, this course helped me bridge the gap between traditional project management and Agile methodologies. Miss Aimiuwu's interactive teaching style, real-world examples, and hands-on exercises solidified my understanding of Scrum framework complexities. As a direct result of the training, I successfully transitioned into a Scrum Master role, applying Scrum principles to drive team success.",
+      id2: 6, 
+      content2: 'Slide 3 Content', 
+      image2: lady6, 
+      name2: "Adedeji Adeleye", 
+      title2: "Scrum Master", 
+      review2: "My experience with the training was very robust. I particularly enjoyed how engaging it was and how our coach tried to ensure that everyone was carried along during the sessions. Also, I loved how structured the training was. It was clear that a lot of thinking was involved all through. The question and answer sessions just had a way of making the points stick.",  
     },
     
   ];
@@ -78,33 +109,60 @@ const AutoSlider = () => {
     <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Cards Wrapper */}
       <div className="relative w-full overflow-hidden">
-        <div
-          className="flex transition-transform duration-700"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {slides.map((slide) => (
-            <div key={slide.id} className="w-full font-montserrat px-6 flex-shrink-0 flex items-center justify-center">
-              <div className="w-full rounded-lg shadow-lg p-5 py-7 bg-white">
-                <div className='flex gap-3 items-center'>
-                  <img src={slide.image} className='w-[88px] h-[73px]' alt="" />
-                  <div>
-                    <p className='font-[700] text-[16px]'>{slide.name}</p>
-                    <p className='text-[12px]'>{slide.title}</p>
-                  </div>
-                </div>
-                <div className='text-[#575454] font-[500] text-[15px] my-4 leading-[26.69px]'>{slide.review}</div>
-                <div className='flex gap-2'>
-                  <img className='w-[20.58px] h-[19.69px]' src={star} alt="" />
-                  <img className='w-[20.58px] h-[19.69px]' src={star} alt="" />
-                  <img className='w-[20.58px] h-[19.69px]' src={star} alt="" />
-                  <img className='w-[20.58px] h-[19.69px]' src={star} alt="" />
-                  <img className='w-[20.58px] h-[19.69px]' src={star} alt="" />
-                </div>
-              </div>
-              
-            </div>
-          ))}
+      <div
+  className="flex transition-transform duration-700"
+  style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+>
+  {slides.map((slide) => (
+    <div
+      key={slide.id}
+      className="w-full px-2 flex-shrink-0 flex items-stretch justify-center gap-4"
+    >
+      {/* First Card */}
+      <div className="w-[501px] h-[346px] font-montserrat rounded-lg shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
+        <div className="flex gap-3 items-center">
+          <img src={slide.image} className="w-[88px] h-[73px]" alt="" />
+          <div>
+            <p className="font-[700] text-[16px]">{slide.name}</p>
+            <p className="text-[12px]">{slide.title}</p>
+          </div>
         </div>
+        <div className="text-[#575454] font-[500] text-[15px] my-4 leading-[26.69px] overflow-hidden">
+          {slide.review}
+        </div>
+        <div className="flex gap-2">
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+        </div>
+      </div>
+      {/* Second Card */}
+      <div className="w-[501px] h-[346px] rounded-lg font-montserrat shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
+        <div className="flex gap-3 items-center">
+          <img src={slide.image2} className="w-[88px] h-[73px]" alt="" />
+          <div>
+            <p className="font-[700] text-[16px]">{slide.name2}</p>
+            <p className="text-[12px]">{slide.title2}</p>
+          </div>
+        </div>
+        <div className="text-[#575454] font-[500] text-[15px] my-4 leading-[26.69px] overflow-hidden">
+          {slide.review2}
+        </div>
+        <div className="flex gap-2">
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+          <img className="w-[20.58px] h-[19.69px]" src={star} alt="" />
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
 
       {/* Indicators */}
