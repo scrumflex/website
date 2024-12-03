@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Navbar from "../components/Nav";
 import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs";
 
 function Articles() {
     const myRef = useRef(null);
@@ -92,6 +93,7 @@ function Articles() {
                 </div>
             </div>
         </section>
+        <ContactUs formRef = {myRef} />
         <Footer />
     </>
     )
