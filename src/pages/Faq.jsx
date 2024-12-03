@@ -9,7 +9,7 @@ function Faq() {
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/image25.jpg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-top bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/students.jpg')] flex justify-center items-center bg-blend-overlay w-full bg-cover object-cover bg-black/20 bg-[50%_32%] bg-no-repeat h-[200px] lg:h-[398px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">FAQ</h1>
             </section>
             <Faqs />

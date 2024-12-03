@@ -25,6 +25,7 @@ function Footer() {
                     <Link to="/website/about-us/"><li className="mb-2 lg:text-[12px] text-[#FFFFFFAD]">About Us</li></Link>
                     <Link to="/website/trainings/"><li className="mb-2 lg:text-[12px] text-[#FFFFFFAD]">Trainings</li></Link>
                     <Link to="/website/faq/"><li className="mb-2 lg:text-[12px] text-[#FFFFFFAD]">Faqs</li></Link>
+                    <Link to="/website/article/"><li className="mb-2 lg:text-[12px] text-[#FFFFFFAD]">Articles</li></Link>
                 </ul>
             </div>
             <div className="order-4 lg:order-3">
@@ -38,7 +39,7 @@ function Footer() {
             </div>
             <div className="order-3">
                 <h4 className="text-[16px] mt-8 lg:mt-0 mb-3">Contact Us</h4>
-                <p className="text-[10px] lg:text-[12px] text-[#FFFFFFAD]">Hello.scrumflex@gmail.com</p>
+                <p className="text-[10px] lg:text-[12px] text-[#FFFFFFAD]"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.scrumflex@gmail.com">hello.scrumflex@gmail.com</a></p>
             </div>
         </div>
         <p className="text-[10px] lg:border-t-[1px] lg:py-12 lg:border-[#FFFFFF33] lg:text-[12px] text-center pt-4 pb-6 text-[#FFFFFFAD]">@{new Date().getFullYear()} Scrumflex. All right reserved</p>

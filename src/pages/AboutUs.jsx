@@ -1,5 +1,5 @@
 import Navbar from "../components/Nav";
-import amen from "../assets/amen.png";
+import amen from "../assets/picture1.svg";
 import arono from "../assets/arono.png";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
@@ -12,7 +12,7 @@ function AboutUs() {
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/image25.jpg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-top bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/students.jpg')] flex justify-center items-center bg-blend-overlay w-full bg-cover object-cover bg-black/20 bg-[50%_32%] bg-no-repeat h-[200px] lg:h-[398px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">ABOUT US</h1>
             </section>
             <section className="font-montserrat pt-4 px-6 lg:px-24 lg:py-16">
@@ -25,12 +25,7 @@ function AboutUs() {
                     <img className="lg:float-right lg:w-[487px] lg:h-[353px] lg:m-2" src={amen} />
                     <div>
                     <h2 className="font-montserrat font-[700] text-[26px] mt-6 lg:mt-0 lg:text-[32px] mb-3">Meet Amen</h2>
-                    <p className="font-montserrat leading-[28.34px] text-[14px] lg:text-[15px] text-[#575454]">Hiya I'm Amen, A Certified Scrum Master, Scrum trainer, Researcher, 
-                        Lead Community Manager of Scrum Master Africa and the founder of Scrumflex. 
-                        I've been privileged to have trained over 50 aspiring and enthusiastic Scrum 
-                        Masters across 4 countries. 
-                        One of the things I'm often asked is "What inspired you to start a career 
-                        in Tech when you have a science background?"
+                    <p className="font-montserrat leading-[28.34px] text-[14px] lg:text-[15px] text-[#575454]">Hiya I'm Amen, A Certified SAFe Scrum Master, Agile Coach, Researcher, Lead Community Manager of Scrum Master Africa and the founder of Scrumflex. I've been privileged to have trained over 200 aspiring and enthusiastic Scrum Masters across 4 continents with over 4 years experience in the Tech space.
                     </p>
                     <Link to="/website/learn-more">
                     <button className="bg-[#4ABE99] lg:mt-6 mt-2 mb-4 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]" >

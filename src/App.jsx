@@ -26,7 +26,7 @@ function App() {
       element: <Trainings />
     },
     {
-      path:'website/articles/',
+      path:'website/article/',
       element: <Articles />
     },
     {

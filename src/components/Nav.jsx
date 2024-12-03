@@ -19,6 +19,7 @@ function Navbar({ buttonRef }) {
                         <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/website/trainings/' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/trainings">Trainings</Link></li>
                         {/* <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/website/articles/' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/articles">Articles</Link></li> */}
                         <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/website/faq/' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/faq">FAQs</Link></li>
+                        <li><Link className={`font-montserrat block font-[500] ${location.pathname === '/website/article/' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/article">Articles</Link></li>
                     </ul>
                </div>
                 <div className="hidden lg:flex md:justify-center lg:items-center">
@@ -61,6 +62,7 @@ function Navbar({ buttonRef }) {
                         <li className="mb-8"><Link className={`font-montserrat block ${location.pathname === '/website/trainings' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/trainings">Trainings</Link></li>
                         {/* <li className="mb-8"><Link className={`font-montserrat block ${location.pathname === '/website/articles' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/articles">Articles</Link></li> */}
                         <li className="mb-8"><Link className={`font-montserrat block ${location.pathname === '/website/faq' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/faq">FAQs</Link></li>
+                        <li className="mb-8"><Link className={`font-montserrat block ${location.pathname === '/website/article' ? 'text-[#283B49]' : 'text-[#000000]'}`} to="/website/article">Articles</Link></li>
                     </ul>
                     <div className="flex justify-center items-center">
                     <button className="bg-[#4ABE99] mt-2 mb-4 lg:mt-0 lg:mb-0 text-white rounded-[5px] w-[166px] h-[48px]" onClick={() => buttonRef.current.scrollIntoView({

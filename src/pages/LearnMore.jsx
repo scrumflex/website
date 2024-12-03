@@ -5,20 +5,35 @@ import amen3 from "../assets/picture3.png";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function LearnMore() {
     const myRef = useRef(null);
     return (
         <>
             <Navbar buttonRef = {myRef} />
-            <section className="bg-[url('/scholarship.jpeg')] flex justify-center items-center bg-black/50 bg-blend-overlay w-full bg-cover object-cover bg-center bg-no-repeat h-[200px] lg:h-[278px]">
+            <section className="bg-[url('/students.jpg')] flex justify-center items-center bg-blend-overlay w-full bg-cover object-cover bg-black/20 bg-[50%_32%] bg-no-repeat h-[200px] lg:h-[398px]">
                 <h1 className="font-montserrat text-white text-[32px] font-[700]">ABOUT US</h1>
             </section>
-            <div className="lg:px-24 mt-6 px-6 lg:mb-8">
-            <section className="mb-6">
+            <div className="relative lg:px-24 mt-6 px-6 lg:mb-8">
+            <section className="mb-6 relative">
+            <Link to="/website/about-us/">
+            <div className="fixed bottom-6 left-[80px]">
+                <button className="relative flex items-center px-6 py-2 bg-gradient-to-r from-[#86c8b3] to-[#4ABE99] text-white rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out group">
+                    <span className="absolute left-0 inset-y-0 flex items-center justify-center w-10 h-10 bg-white bg-opacity-20 rounded-full group-hover:bg-opacity-40 transition duration-300 ease-in-out">
+                        <svg className="w-5 h-5 text-white group-hover:text-[#86c8b3] transition duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </span>
+                    <span className="ml-10 font-medium">Go back</span>
+                </button>
+
+            </div>
+            </Link>
+                
                 <img className="float-right lg:w-[487px] lg:h-[353px] m-2" src={amen} />
                 <h2 className="font-montserrat mt-12 font-[700] text-[32px] mb-3">Meet Amen</h2>
-                <p className="font-montserrat leading-[28.34px] text-[15px] text-[#575454]">Hiya I'm Amen, A Certified Scrum Master, Scrum trainer, Researcher, 
+                <p className="font-montserrat leading-[28.34px] text-[15px] text-[#575454]">Hiya I'm Amen, A Certified SAFe Scrum Master, Scrum trainer, Researcher, 
                     Lead Community Manager of Scrum Master Africa and the founder of Scrumflex. 
                     I've been privileged to have trained over 50 aspiring and enthusiastic Scrum 
                     Masters across 4 countries. 
