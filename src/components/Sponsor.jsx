@@ -2,6 +2,7 @@ import tellAgile from '../assets/tell-agile-big.png'
 import scrum from '../assets/scrum-flex-big.png'
 import sixDot from '../assets/yellow-six-dots.png'
 import infoSte from '../assets/info-ste-color.png'
+import kode10x from '../assets/kode10x.jpeg'
 
 
 function Sponsor() {
@@ -13,6 +14,7 @@ function Sponsor() {
                 <img src={sixDot} className='w-[75px] h-[23px] lg:w-[155.29px] lg:h-[44px]' alt="" />
                 <img src={tellAgile} className='w-[60px] h-[53px] lg:w-[122px] lg:h-[108px]' alt="" />
                 <img src={infoSte} className='w-[54px] h-[23px] lg:w-[115px] lg:h-[47px]' alt="" />
+                <img src={kode10x} className='w-[54px] h-[23px] lg:w-[115px] lg:h-[47px]' alt="" />
             </div>
         </section>
     )

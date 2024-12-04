@@ -121,7 +121,7 @@ function Trainings() {
            {
             psm && (
                 <div className="fixed font-montserrat inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+                <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
                     <div className="flex justify-between items-center mb-4">
                     <h2 className="text-xl font-semibold">Professional Scrum Master (PSM) I</h2>
                     <button className="text-gray-500 text-3xl hover:text-gray-700" onClick={()=>setPsm(false)}>
@@ -129,7 +129,7 @@ function Trainings() {
                     </button>
                     </div>
                     <p className="text-gray-600 mb-6">
-                    A more detailed explanation will be placed here once I get the text.
+                    This globally recognized certification, offered by scrum.org, validates your understanding of the Scrum Framework, its principles, and the role of a Scrum Master. It's ideal for aspiring Scrum Masters, Agile enthusiasts, and project managers.
                     </p>
                 </div>
                 </div>
@@ -138,7 +138,7 @@ function Trainings() {
             {
             pspo && (
                 <div className="fixed font-montserrat inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+                <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
                     <div className="flex justify-between items-center mb-4">
                     <h2 className="text-xl font-semibold">Professional Scrum Product Owner (PSPO)</h2>
                     <button className="text-gray-500 text-3xl hover:text-gray-700" onClick={()=>setPspo(false)}>
@@ -146,7 +146,7 @@ function Trainings() {
                     </button>
                     </div>
                     <p className="text-gray-600 mb-6">
-                    A more detailed explanation will be placed here once I get the text.
+                    This globally recognized certification, offered by scrum.org, assesses your knowledge of Scrum from a Product Owner’s perspective and your ability to deliver value. Ideal for Product Owners, business analysts, and anyone involved in value delivery within Agile projects.
                     </p>
                 </div>
                 </div>
