@@ -210,7 +210,7 @@ const AutoSlider = () => {
       className="w-full px-2 flex-shrink-0 flex flex-col md:flex-row items-stretch justify-center gap-4"
     >
       {/* First Card */}
-      <div className="w-[501px] h-[346px] font-montserrat rounded-lg shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
+      <div className="lg:w-[501px] mx-auto w-[401px] lg:h-[346px] font-montserrat rounded-lg shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
         <div className="flex gap-3 items-center">
           <img src={slide.image} className="w-[88px] h-[73px]" alt="" />
           <div>
@@ -230,7 +230,7 @@ const AutoSlider = () => {
         </div>
       </div>
       {/* Second Card */}
-      <div className="w-[501px] h-[346px] rounded-lg font-montserrat shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
+      <div className="lg:w-[501px] mx-auto w-[401px] lg:h-[346px] rounded-lg font-montserrat shadow-lg p-5 py-7 bg-white flex flex-col justify-between">
         <div className="flex gap-3 items-center">
           <img src={slide.image2} className="w-[88px] h-[73px]" alt="" />
           <div>
