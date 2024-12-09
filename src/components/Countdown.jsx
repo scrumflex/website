@@ -50,7 +50,7 @@ const Countdown = () => {
     <div ref={countdownRef} className="bg-[#26619B] flex justify-center items-center mt-12 p-4">
       <div className="flex w-full justify-between lg:justify-center items-center">
         <CountdownItem unit="Day" text="Trainees" figure='+' icon={icon1} />
-        <CountdownItem unit="Hour" text="Countries" figure='' icon={icon2} />
+        <CountdownItem unit="Hour" text="Continents" figure='' icon={icon2} />
         <CountdownItem unit="Minute" text="Success Rate" figure='%' icon={icon3} />
         <CountdownItem unit="Second" text="Community" figure='+' icon={icon4} />
       </div>
